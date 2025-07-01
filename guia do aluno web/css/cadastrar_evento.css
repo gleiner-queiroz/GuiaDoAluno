@@ -1,0 +1,67 @@
+/* cadastrar_evento.css */
+
+/* NÃO repetir estilos da sidebar, body, topo ou dos botões gerais */
+
+.content {
+  padding: 2rem;
+}
+
+.form-section {
+  background: #f2f2f2;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px; /* Limita a largura do formulário */
+  margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+.form-section h2 {
+  color: #1d0b61;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.event-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.event-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4920d4;
+  font-weight: 600;
+}
+
+.event-form input[type="text"],
+.event-form input[type="date"],
+.event-form input[type="url"],
+.event-form select,
+.event-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+}
+
+.event-form textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.event-form input[type="text"]:focus,
+.event-form input[type="date"]:focus,
+.event-form input[type="url"]:focus,
+.event-form select:focus,
+.event-form textarea:focus {
+  outline: none;
+  border-color: #4920d4;
+  box-shadow: 0 0 0 3px rgba(73, 32, 212, 0.2);
+}
+
+.event-form .btn {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}

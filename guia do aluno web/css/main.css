@@ -1,0 +1,165 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background: linear-gradient(to bottom right, #1d0b61, #4920d4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  .logo {
+    width: 250px;
+    margin-bottom: 3rem;
+  }
+    
+  .main {
+    flex: 1;
+    background: #fff;
+    color: #000;
+    padding: 2rem;
+    overflow-y: auto;
+  }
+  
+.topo {
+  background: linear-gradient(to right, #1d0b61, #4920d4);
+  color: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Isso centraliza o texto */
+  position: relative; /* Necessário para posicionar a seta */
+}
+
+.cabec {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.titulo-obmep {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  pointer-events: none;
+}
+  
+  .botoes {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition:
+      background 10s linear,
+      color 0s linear,
+      transform 0.3s cubic-bezier(0.33, 1, 0.68, 1), /* ease-out */
+      box-shadow 0.3s linear;
+  }
+
+.btn:hover {
+  background: linear-gradient(to right, #1d0b61, #4920d4);
+  color: #fff;
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btnside {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition:
+    background 10s linear,
+    color 0s linear,
+    transform 0.3s cubic-bezier(0.33, 1, 0.68, 1), /* ease-out */
+    box-shadow 0.3s linear;
+  margin-bottom: 1rem;
+}
+
+.btnside:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tela-apresentacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #1d0b61, #4920d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+.tela-apresentacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #1d0b61, #4920d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.mensagem {
+  font-size: 4.5rem;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: subirFade 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+@keyframes subirFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.imagem {
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave para o efeito */
+}
+
+.imagem:hover {
+  transform: scale(1.05); /* Aumenta a imagem em 5% (1.05 é 105% do tamanho original) */
+}

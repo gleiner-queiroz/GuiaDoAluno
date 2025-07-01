@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/login.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-form-container">
+        <h1 class="auth-form-heading-login">Olá novamente!</h1>
+        <form class="auth-form">
+          <div class="auth-input-container">
+            <input
+              type="text"
+              class="auth-input-field"
+              placeholder=""
+              id="email"
+            />
+            <label for="email" class="auth-input-label">Email</label>
+            <i class="input-icon fa fa-envelope"></i>
+          </div>
+
+          <div class="auth-input-container">
+            <input
+              type="password"
+              class="auth-input-field"
+              placeholder=""
+              id="password"
+            />
+            <label for="password" class="auth-input-label">Password</label>
+            <i class="input-icon fa fa-lock"></i>
+          </div>
+
+          <button class="auth-submit-button" onclick="window.location.href='../inicio.html'" >Acessar</button>
+
+          <a class="register-link" href="./cadrasto.html" class="auth-link"> Ainda não tem conta?</a>
+        </form>
+      </div>
+
+      <div class="auth-section login-move login">
+        <h1 class="desc">Você está a um login dos seus estudos.</h1>
+      </div>
+    </div>
+  </body>
+</html>
