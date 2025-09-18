@@ -1,0 +1,142 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --dark-bg: #120E23;
+    --sidebar-bg: #1A1532;
+    --primary-color: #4B3294;
+    --text-color: #E0E0E0;
+    --text-color-light: #A0A0A0;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+/* Estilos globais e base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+}
+
+.app-container {
+    display: flex;
+    width: 100%;
+}
+
+/* --- Estilos da Sidebar --- */
+.sidebar {
+    width: 280px;
+    min-height: 100vh;
+    background-color: var(--sidebar-bg);
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo e nome da marca */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.logo img {
+    width: 40px; /* Tamanho do ícone do logo */
+    height: auto;
+}
+
+.logo span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Lista de navegação */
+.menu-list ul {
+    list-style: none;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    color: var(--text-color-light);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.menu-item a:hover {
+    background-color: rgba(75, 50, 148, 0.2);
+    color: var(--text-color);
+}
+
+.menu-item.active a {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.menu-item i {
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* --- Estilos da Área de Conteúdo --- */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.main-header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    color: var(--text-color-light);
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Componente de citação */
+.motivation-quote {
+    background-color: var(--sidebar-bg);
+    padding: 30px 50px;
+    border-radius: 25px;
+    max-width: 650px;
+    margin-top: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.motivation-quote p {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--text-color-light);
+}
